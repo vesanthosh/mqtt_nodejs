@@ -6,6 +6,6 @@ client.on('connect', function () {
 });
 
 client.on('message',function(topic,message){
-data = message.toString();
-console.log(data);
+mqtt_data = message.toString();
+console.log(mqtt_data);
 });
