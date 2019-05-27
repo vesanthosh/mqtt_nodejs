@@ -1,0 +1,22 @@
+{
+  "name": "mqtt_nodejs",
+  "version": "1.0.0",
+  "description": "simple node js for mqtt",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vesanthosh/mqtt_nodejs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vesanthosh/mqtt_nodejs/issues"
+  },
+  "homepage": "https://github.com/vesanthosh/mqtt_nodejs#readme",
+  "dependencies": {
+    "mongodb": "^3.2.6",
+    "mqtt": "^3.0.0"
+  }
+}
