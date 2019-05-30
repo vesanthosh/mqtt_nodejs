@@ -1,13 +1,14 @@
-var mqtt = require('mqtt');
 var MongoClient = require('mongodb').MongoClient;
 var mongoURI = 'mongodb://user:password@192.168.99.100:27017/mqtt_db';
+
+var mqtt = require('mqtt');
 var client = mqtt.connect('mqtt:192.168.99.100');
 
 var collection;
 
 client.on('connect', function () {
         client.subscribe('test/data', { qos: 1 });
-        console.log('Topic subscribed')
+        console.log('MQTT topic subscribed')
 });
 
 MongoClient.connect(mongoURI, { useNewUrlParser: true }, (err, client) => {
